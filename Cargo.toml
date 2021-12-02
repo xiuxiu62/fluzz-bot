@@ -1,0 +1,8 @@
+[package]
+name = "fluzz-bot"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+serenity = { version = "0.10", default-features = false, features = ["client", "gateway", "rustls_backend", "model"] }
+tokio = { version = "1.14.0", features = ["macros", "rt-multi-thread"] }
